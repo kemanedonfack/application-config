@@ -1,4 +1,10 @@
 spring:
+  #Security
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://localhost:8080/realms/demo/protocol/openid-connect/certs
   #Database Configuration
   datasource:
     url: jdbc:mysql://localhost:3306/boaz-test?createDatabaseIfNotExist=true
