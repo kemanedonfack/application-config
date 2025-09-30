@@ -1,10 +1,12 @@
 spring:
   #Security
-  security:
+    security:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: https://localhost:8080/realms/demo/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8080/realms/BoazReaml
+          jwk-set-uri: http://localhost:8080/realms/BoazReaml/protocol/openid-connect/certs
+  
   #Database Configuration
   datasource:
     url: jdbc:mysql://localhost:3306/boaz-test?createDatabaseIfNotExist=true
@@ -14,6 +16,13 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+
+# JWT Configuration
+jwt:
+  auth:
+    converter:
+      resource-id: boazClient
+      principal-attribute: principal_username
 
 #eureka
 eureka:
