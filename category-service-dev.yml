@@ -1,0 +1,15 @@
+spring:
+  #Database Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/boaz-test?createDatabaseIfNotExist=true
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+# Logging Configuration
+logging:
+  level:
+    org.springframework.security: DEBUG
