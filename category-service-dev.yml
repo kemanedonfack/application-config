@@ -9,6 +9,10 @@ spring:
       ddl-auto: create-drop
     show-sql: true
 
+product:
+  service:
+    url: http://localhost:8002
+    
 # Logging Configuration
 logging:
   level:
