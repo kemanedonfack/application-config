@@ -4,8 +4,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/BoazReaml
-          jwk-set-uri: http://localhost:8080/realms/BoazReaml/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8080/realms/BoazRealm
+          jwk-set-uri: http://localhost:8080/realms/BoazRealm/protocol/openid-connect/certs
   
   #Database Configuration
   datasource:
