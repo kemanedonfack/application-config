@@ -1,6 +1,6 @@
 spring:
   #Security
-    security:
+  security:
     oauth2:
       resourceserver:
         jwt:
